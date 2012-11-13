@@ -28,11 +28,12 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler());
+  app.set('runmode', 'Development');
 });
 
 app.get('/', routes.index);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
+  console.log("Express server listening on port %s in %s mode", app.get('port'), app.get('runmode'));
 });
