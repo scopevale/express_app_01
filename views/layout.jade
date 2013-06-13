@@ -1,7 +1,16 @@
-doctype 5
+!!! 5
 html
   head
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
+    meta(name='keywords', content='foo bar baz')
     title= title
+    link(rel='stylesheet', href='/stylesheets/reset.css')    
+    link(rel='stylesheet', href='/stylesheets/unsemantic-grid-responsive.css')    
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    header 
+        img#header_image(src='/images/mts-header_d.png')
+        //
+        <span id="slogan" class="headerSlogan">Luxury Minibus Hire</span> 
+        h1#phonenumber 01992-429529 
     block content

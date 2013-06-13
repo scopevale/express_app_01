@@ -1,0 +1,2 @@
+{"ts":1370331386183,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"\n/*\n * GET home page.\n */\n\nexports.index = function(req, res){\n  res.render('index', { title: 'Express' });\n};"]],"start1":0,"start2":0,"length1":0,"length2":110}]],"length":110}
+{"contributors":[],"silentsave":false,"ts":1371022672379,"patch":[[{"diffs":[[0,"'Express"],[1," - Home Page"],[0,"' });\n};"]],"start1":94,"start2":94,"length1":16,"length2":28}]],"length":122,"saved":false}
