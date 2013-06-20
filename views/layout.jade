@@ -8,9 +8,14 @@ html
     link(rel='stylesheet', href='/stylesheets/unsemantic-grid-responsive.css')    
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    header 
-        img#header_image(src='/images/mts-header_d.png')
-        //
-        <span id="slogan" class="headerSlogan">Luxury Minibus Hire</span> 
-        h1#phonenumber 01992-429529 
-    block content
+    #page_container.grid-container
+        header.grid-100 
+            img#header_image(src='/images/mts-header_d.png')
+            //
+            <span id="slogan" class="headerSlogan">Luxury Minibus Hire</span> 
+            h1#phonenumber 01992-429529 
+        block content
+        footer.grid-100
+            #footer_top
+                h5 
+                    website designed and hosted by Gary Smith

@@ -1,42 +1,31 @@
 extends layout
 
 block content
-#content.container_12
-    #leftNav.grid_2
-        ul
-          li.first.active.round_this
-            a(title='Mick\'s Travel Services - Home Page', href='http://www.mickstravel.co.uk/') Home
-          li.round_this
-            a(title='Booking Form', href='booking-form.html') Online Booking Form
-          li.last.round_this
-            a(title='Contact Me', href='contact-me.html') Contact Me
-      #mainContent.grid_8
-        h3
-          img(align='left', alt='', src='/images/van01.png', style='margin-right: 20px; margin-top: 20px;')
-        h3
-          br
-        h1.pageH1
-          | Welcome to Mick's Travel Services
-          br
-      //     span.smallH1 Luxury 16 Seater Mini Coaches
-      //   p Thank you for visiting my new website.
-      //   p
-      //     | The emphasis of my site is on contract and private hire travel services for schools, clubs, groups, evenings out, airport transfers etc...
-      //   p
-      //     | My regular customers particularly value a prompt, reliable and value for money service. If you are not familiar with my company and your first contact with me is online: I would be pleased to hear from you! Please let me know what your needs and questions are, I will be more than happy to help.
-      //   p
-      //     | My business is located in London and the Home Counties. You can reach me by using the
-      //     a.internal_link(href='booking') Online Booking Form
-      //     | link from the Main Menu or you may call me direct on
-      //     span(style='font-size: 18px;') 01992-429529
-      //     | or fax me on
-      //     span(style='font-size: 18px;') 01992-429529
-      //     | . You can also contact me via the
-      //     a.internal_link(href='contact-me.html')
-      //       strong Contact Me
-      //     | link from the Main Menu.
-      //   p I look forward to hearing from you.
-      // #rightSideBar.grid_2
-        
-
-
+    #content.grid-100
+        include jade_includes/left-nav
+        #mainContent.grid-70
+            h3
+              img(style='margin-right: 20px; margin-top: 20px;', src='/images/van01.png', alt='', align='left')
+            h3
+              br
+            h1.pageH1
+              | Welcome to Mick's Travel Services
+              br
+              span.smallH1 Luxury 16 Seater Mini Coaches
+            p Thank you for visiting my new website.
+            p
+              | The emphasis of my site is on contract and private hire travel services for schools, clubs, groups, evenings out, airport transfers etc...
+            p
+              | My regular customers particularly value a prompt, reliable and value for money service. If you are not familiar with my company and your first contact with me is online: I would be pleased to hear from you! Please let me know what your needs and questions are, I will be more than happy to help.
+            p
+              | My business is located in London and the Home Counties. You can reach me by using the 
+              a.internal_link(href='/booking') Online Booking Form
+              |  link from the Main Menu or you may call me direct on 
+              span(style='font-size: 18px;') 01992-429529 
+              | or fax me on 
+              span(style='font-size: 18px;') 01992-429529
+              | .
+            p I look forward to hearing from you.
+        include jade_includes/right-sidebar
+    br
+    br

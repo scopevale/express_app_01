@@ -11,5 +11,9 @@ images
 pids
 logs
 results
+public/css
+public/js
+public/images/spinner*
+.c9revisions
 
 npm-debug.log
