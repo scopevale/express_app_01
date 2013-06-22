@@ -1,0 +1,136 @@
+/*
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+*/
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*    j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+
+/* Font Faces */
+@font-face {
+    font-family: 'GraublauWebRegular';
+	src: url('GraublauWeb.eot');
+	src: local('Graublau Web'), local('GraublauWeb-Regular'), url('../fonts/GraublauWeb.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GraublauWebBold';
+	src: url('GraublauWebBold.eot');
+	src: local('Graublau Web Bold'), local('GraublauWeb-Bold'), url('../fonts/GraublauWebBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('../fonts/Chunkfive.eot');
+	src: local('ChunkFive'), local('ChunkFive'), url('../fonts/Chunkfive.woff') format('woff'), url('../fonts/Chunkfive.ttf') format('truetype'), url('../fonts/Chunkfive.svg#ChunkFive') format('svg');
+}
+
+
+
+/* My styles */
+header {
+ background: url("../images/headerbar.png") repeat-x scroll left top #6FB1FF;
+ height: 90px;
+ top: 0;
+}
+
+
+#header_image {
+ margin-top: 3px;    
+ margin-left: 40px;	
+}
+
+h1 {
+ font-family: 'GraublauWebBold';
+}
+
+#headertitle {
+ font-family: 'GraublauWebBold';
+ display: inline; 
+ color: #D34E21;
+ font-size: 500%;
+ margin-left: 20px;
+ /*margin-top: 10px; */
+}
+
+#phonenumber, #phone_image {
+ font-family: 'GraublauWebBold'; 
+ /*display: inline;*/
+ float: right;
+ margin-top: 5px;
+ margin-right: 30px;
+/* color: #D34E21; */
+ color: #D24D20;
+ color: #DF6D45;
+ font-size: 350%;
+}
+
+#phone_image {
+ display: inline;
+ float: right;
+ margin-top: 25px;
+ margin-right: 40px;
+}
+
+p {
+ font-family: 'GraublauWebBold';
+ font-size: 140%; 
+}
+
+
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+	
+		
+}
